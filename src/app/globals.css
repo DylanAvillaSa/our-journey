@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* ==== PREVIEW ONLY ==== */
+
+.preview-scale {
+  transform: scale(0.55); /* kecilin ukuran template */
+  transform-origin: top center;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 14px;
+  margin: 0 auto;
+}
+
+/* kasih batas tinggi supaya gak nabrak ke bawah */
+.preview-scale {
+  max-height: 600px;
+}

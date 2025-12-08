@@ -1,0 +1,148 @@
+[
+  {
+    "id": 1,
+    "template": "Silver",
+    "harga": {
+      "original": "Rp 70.000",
+      "promo": "Rp 49.000"
+    },
+    "nama_mempelai_pria": "Rizky Pratama",
+    "nama_mempelai_wanita": "Alya Putri Ramadhani",
+    "tanggal_akad": "2025-12-20T09:00:00",
+    "tanggal_resepsi": "2025-12-20T11:00:00",
+    "lokasi_akad": "Masjid Al-Hikmah, Bandung",
+    "lokasi_resepsi": "Gedung Serba Guna Cibiru, Bandung",
+    "gallery": ["silver1.jpg", "silver2.jpg", "silver3.jpg", "silver4.jpg"],
+    "backsound": "romantic-instrumental.mp3",
+    "amplop_digital": {
+      "rekening": "BCA 1234567890 a.n Rizky Pratama",
+      "dompet_digital": "DANA 085712345678"
+    },
+    "ucapan_doa": [
+      "Selamat menempuh hidup baru!",
+      "Semoga menjadi keluarga yang sakinah mawaddah warahmah."
+    ],
+    "link_maps": "https://goo.gl/maps/exampleSilver",
+    "fitur": [
+      "Tampilan lebih elegan",
+      "Jumlah undangan unlimited",
+      "Photo Slider (4)",
+      "Ucapan dan Doa",
+      "Photo Gallery (4)",
+      "Countdown",
+      "Amplop Digital",
+      "Musik"
+    ]
+  },
+  {
+    "id": 2,
+    "template": "Gold",
+    "harga": {
+      "original": "Rp 150.000",
+      "promo": "Rp 99.000"
+    },
+    "nama_mempelai_pria": "Dimas Haryanto",
+    "nama_mempelai_wanita": "Nadia Safira",
+    "tanggal_akad": "2025-12-25T08:30:00",
+    "tanggal_resepsi": "2025-12-25T12:00:00",
+    "lokasi_akad": "Masjid Al-Falah, Surabaya",
+    "lokasi_resepsi": "The Grand Ballroom, Surabaya",
+    "gallery": [
+      "gold1.jpg",
+      "gold2.jpg",
+      "gold3.jpg",
+      "gold4.jpg",
+      "gold5.jpg",
+      "gold6.jpg",
+      "gold7.jpg",
+      "gold8.jpg"
+    ],
+    "love_story": [
+      {
+        "tahun": "2019",
+        "cerita": "Pertemuan pertama di acara kampus."
+      },
+      {
+        "tahun": "2021",
+        "cerita": "Mulai serius dan berkomitmen bersama."
+      },
+      {
+        "tahun": "2025",
+        "cerita": "Memutuskan untuk menikah dan memulai kisah baru."
+      }
+    ],
+    "backsound": "beautiful-day.mp3",
+    "amplop_digital": {
+      "rekening": "BRI 0987654321 a.n Dimas Haryanto",
+      "dompet_digital": "OVO 081212345678"
+    },
+    "link_streaming": "https://youtube.com/live/examplegold",
+    "story_instagram": "@dimas_nadia_wedding",
+    "link_maps": "https://goo.gl/maps/exampleGold",
+    "fitur": [
+      "Semua fitur Silver",
+      "Video",
+      "Love Story",
+      "Story Instagram",
+      "Photo Slider (2)",
+      "Custom Tema",
+      "Variasi warna (3)",
+      "Photo Gallery (8)",
+      "Link Streaming"
+    ]
+  },
+  {
+    "id": 3,
+    "template": "Platinum",
+    "harga": {
+      "original": "Rp 200.000",
+      "promo": "Rp 159.000"
+    },
+    "nama_mempelai_pria": "Aditya Rahman",
+    "nama_mempelai_wanita": "Citra Amelia",
+    "tanggal_akad": "2026-01-10T09:00:00",
+    "tanggal_resepsi": "2026-01-10T13:00:00",
+    "lokasi_akad": "Masjid Raya Al-Azhar, Jakarta",
+    "lokasi_resepsi": "Hotel Mulia Ballroom, Jakarta",
+    "gallery": [
+      "platinum1.jpg",
+      "platinum2.jpg",
+      "platinum3.jpg",
+      "platinum4.jpg",
+      "platinum5.jpg",
+      "platinum6.jpg",
+      "platinum7.jpg",
+      "platinum8.jpg",
+      "platinum9.jpg",
+      "platinum10.jpg"
+    ],
+    "love_story": [
+      {
+        "tahun": "2017",
+        "cerita": "Bertemu di acara seminar teknologi."
+      },
+      {
+        "tahun": "2020",
+        "cerita": "Mulai berpacaran dan saling mendukung karier masing-masing."
+      },
+      {
+        "tahun": "2026",
+        "cerita": "Melanjutkan kisah cinta menuju pernikahan."
+      }
+    ],
+    "backsound": "forever-love.mp3",
+    "amplop_digital": {
+      "rekening": "Mandiri 1122334455 a.n Aditya Rahman",
+      "dompet_digital": "GOPAY 085612345678"
+    },
+    "link_streaming": "https://youtube.com/live/exampleplatinum",
+    "ucapan_video": ["video1.mp4", "video2.mp4"],
+    "link_maps": "https://goo.gl/maps/examplePlatinum",
+    "fitur": [
+      "Semua fitur Gold",
+      "Custom Tema",
+      "Desain eksklusif",
+      "Ucapan Melalui Video"
+    ]
+  }
+]
