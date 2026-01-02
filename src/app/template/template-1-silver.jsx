@@ -401,19 +401,6 @@ export default function Template1Silver({ id, data }) {
             </div>
 
             {/* Card Info */}
-            <div className="relative w-[90%] max-w-md -mt-12 z-40">
-              <div className="bg-white/95 backdrop-blur-md rounded-3xl px-6 py-6 border-[3px] border-dashed border-[#F0C84C] shadow-[0_25px_40px_rgba(0,0,0,0.25)]">
-                <h3 className="text-lg md:text-xl font-semibold text-gray-900">
-                  {dataMempelai?.tanggalAkad}
-                </h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  Pukul {dataMempelai?.jamAkad}
-                </p>
-                <p className="text-sm text-gray-700 mt-3">
-                  {dataMempelai?.lokasiAkad}
-                </p>
-              </div>
-            </div>
           </section>
 
           {/* Lokasi Akad & Resepsi */}
