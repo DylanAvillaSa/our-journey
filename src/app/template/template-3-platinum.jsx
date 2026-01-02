@@ -8,6 +8,7 @@ import { collection, query, where, getDocs, getDoc } from "firebase/firestore";
 import { db } from "@/libs/config";
 import { CalendarDays } from "lucide-react";
 import { fonts } from "@/app/layout";
+import { PauseCircle, PlayCircle } from "lucide-react";
 import BottomNavigation from "@/components/ui/BottomNavigation";
 import { useSearchParams } from "next/navigation";
 
@@ -567,7 +568,33 @@ export default function PlatinumTemplate15({ id, data: datas }) {
           {showBackgroundVideo && (
             <div className="relative z-10 flex flex-col items-center justify-center text-center text-gray-800 mt-[100vh] mx-3">
               {isBgVideoDone && (
-                <BottomNavigation onNavigate={scrollToSection} />
+                <>
+                  <BottomNavigation onNavigate={scrollToSection} />
+                  {/* Floating controls: audio, theme, dark */}
+                  <div className="fixed z-50 bottom-4 right-4">
+                    <motion.button
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      whileTap={{ scale: 0.9 }}
+                      onClick={toggleAudio}
+                      className={`p-3 rounded-full shadow-lg ${
+                        T.cta
+                      } text-white flex items-center justify-center group ${
+                        isPlaying && "opacity-35"
+                      }`}
+                      aria-label="Toggle Music"
+                    >
+                      {isPlaying ? (
+                        <PauseCircle size={22} />
+                      ) : (
+                        <PlayCircle size={22} />
+                      )}
+                      {/* Tooltip */}
+                      <span className="absolute right-full mr-2 px-2 py-1 text-xs bg-black/80 text-white rounded-md opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
+                        {isPlaying ? "Pause Music" : "Play Music"}
+                      </span>
+                    </motion.button>
+                  </div>
+                </>
               )}
 
               {/* ===== Pembukaan Surah Ar-Rum (Pink Elegant Theme) ===== */}
@@ -1762,7 +1789,7 @@ export default function PlatinumTemplate15({ id, data: datas }) {
               >
                 {/* foto penutup */}
                 <motion.img
-                  src={dataMempelai?.fotoSampul[0] || "/aset-foto/sampul.webp"}
+                  src={dataMempelai?.fotoSampul[0] || "/images/bg.jpg"}
                   loading="lazy"
                   alt="Bunga Pembuka"
                   className=" w-[200px] mx-auto border-4 border-[#a38751]  h-[270px] object-cover rounded-4xl"

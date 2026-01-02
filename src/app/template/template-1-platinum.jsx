@@ -492,6 +492,31 @@ export default function Template1Platinum({ id, data }) {
                     className="w-full h-full object-cover"
                   />
 
+                  {/* Floating controls: audio, theme, dark */}
+                  <div className="fixed z-50 bottom-4 right-4">
+                    <motion.button
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      whileTap={{ scale: 0.9 }}
+                      onClick={toggleAudio}
+                      className={`p-3 rounded-full shadow-lg ${
+                        T.cta
+                      } text-white flex items-center justify-center group ${
+                        isPlaying && "opacity-35"
+                      }`}
+                      aria-label="Toggle Music"
+                    >
+                      {isPlaying ? (
+                        <PauseCircle size={22} />
+                      ) : (
+                        <PlayCircle size={22} />
+                      )}
+                      {/* Tooltip */}
+                      <span className="absolute right-full mr-2 px-2 py-1 text-xs bg-black/80 text-white rounded-md opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
+                        {isPlaying ? "Pause Music" : "Play Music"}
+                      </span>
+                    </motion.button>
+                  </div>
+
                   {/* Overlay teks */}
                   <motion.div
                     className="absolute inset-0 w-1/2 mx-auto flex flex-col items-center justify-center text-white text-center bottom-9"
@@ -1484,9 +1509,7 @@ export default function Template1Platinum({ id, data }) {
               >
                 {/* foto penutup */}
                 <motion.img
-                  src={
-                    dataMempelai?.fotoSampul[1] || "/foto-dummy/slider5.jpeg"
-                  }
+                  src={dataMempelai?.fotoSampul[1] || "/images/bg.jpg"}
                   loading="lazy"
                   alt="Bunga Pembuka"
                   className=" w-[200px] mx-auto border-4 border-[#a38751]  h-[270px] object-cover rounded-4xl"
